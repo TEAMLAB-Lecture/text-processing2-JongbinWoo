@@ -83,7 +83,5 @@ def to_camel_case(underscore_str):
                 camelcase_list.append(w.capitalize())
         if camelcase_list:
             camelcase_list[0] = camelcase_list[0].lower()
-            camelcase_str = "".join(camelcase_list)
-        else: 
-            camelcase_str = underscore_str
+        camelcase_str = "".join(camelcase_list)
     return camelcase_str
